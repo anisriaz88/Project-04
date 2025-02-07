@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  border: 2px solid black;
+  background: rgb(224, 221, 215);
+    grid-template-areas: 'taskboard navbar navbar '
+     'sidebar-1 content-1 sidebar-2'
+      'sidebar-1 content-2 sidebar-3'
+      'sidebar-4 footer sidebar-3';
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    gap: 20px;
+}
+
+div div {
+    border: 2px solid black;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-area: taskboard;
+}
+
+.item2 {
+    grid-area: navbar;
+}
+
+.item3 {
+    grid-area: sidebar-1;
+}
+
+.item5 {
+    grid-area: sidebar-2;
+}
+
+.item7 {
+    grid-area: sidebar-3;
+}
+
+.item8 {
+    grid-area: sidebar-4;
+}
+
+.item4 {
+    grid-area: content-1;
+}
+
+.item6 {
+    grid-area: content-2;
+}
+
+.item9 {
+    grid-area: footer;
+}
+
