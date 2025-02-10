@@ -1,54 +1,81 @@
 .container {
-  display: grid;
+  display: flex;
   border: 2px solid black;
-  background: rgb(224, 221, 215);
-    grid-template-areas: 'taskboard navbar navbar '
-     'sidebar-1 content-1 sidebar-2'
-      'sidebar-1 content-2 sidebar-3'
-      'sidebar-4 footer sidebar-3';
-    /* grid-template-columns: 1fr 3fr 1fr; */
-    gap: 20px;
+  background: rgb(255, 255, 255);
+    width: 80vw;
+    margin: 0 auto;
 }
 
-div div {
-    border: 2px solid black;
-    padding: 50px;
-    font-size: 20px;
-}
-
-.item1 {
+.header {
     grid-area: taskboard;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.item2 {
-    grid-area: navbar;
+.logo {
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 2vw;
+    margin: 0.5vw;
+    padding: 1vw;
 }
 
-.item3 {
-    grid-area: sidebar-1;
+.logo:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
-.item5 {
-    grid-area: sidebar-2;
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
 }
 
-.item7 {
-    grid-area: sidebar-3;
+.search input {
+    width: 40vw;
+    height: 2vw;
+    border: 2px solid black;
+    margin-left: 0.5vw;
+    padding: 1vw;
 }
 
-.item8 {
-    grid-area: sidebar-4;
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
 }
 
-.item4 {
-    grid-area: content-1;
+.btn button {
+    padding: 0.5vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 1vw;
 }
 
-.item6 {
-    grid-area: content-2;
+.btn button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
-.item9 {
-    grid-area: footer;
+.n-bell {
+    border: 1px solid black;
+    margin-left: 1vw;
+    padding: 0.5vw;
+    font-size: 1.5vw;
 }
+
+.profile {
+    margin-left: 1vw;
+}
+
 
