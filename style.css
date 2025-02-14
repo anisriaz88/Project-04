@@ -768,3 +768,82 @@
     margin-top: 1vw;
 }
 
+/* Media Query */
+@media (max-width: 1024px) {
+    .container {
+      width: 95vw;
+      margin: 2vw;
+    }
+  
+    .main {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "header header"
+        "left-menu main-content"
+        "left-menu content-2"
+        "left-menu content-3"
+        "right-menu right-menu"
+        "right-lower-menu right-lower-menu";
+    }
+  
+    .left-menu,
+    .left-lower-menu {
+      width: 20vw;
+    }
+  
+    .search input {
+      width: 30vw;
+    }
+  
+    .btn button {
+      font-size: 1.2vw;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .search input {
+      width: 80%;
+    }
+  
+    .btn button {
+      font-size: 3vw;
+      padding: 2vw;
+    }
+  
+    .left-menu,
+    .left-lower-menu,
+    .right-menu,
+    .right-lower-menu {
+      width: 100%;
+    }
+  
+    .work,
+    .dashboard {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .p-task,
+    .u-task,
+    .o-task,
+    .pp-task {
+      width: 80%;
+    }
+  }
+  
